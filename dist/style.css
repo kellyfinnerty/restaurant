@@ -1,0 +1,97 @@
+html{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#header{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    grid-gap: 1em;
+    padding-bottom: 0.8em;
+}
+
+#header-logo{
+    grid-column: span 4;
+    width: 300px;
+    height: auto;
+    justify-self: center;
+}
+
+#nav{
+    display: grid;
+    grid-template-columns: repeat(4, 8vw);
+    grid-template-rows: 1.25rem;
+    justify-content: center;
+}
+
+.nav-button{
+    border: none;
+    background-color: white;
+    font-size: 1rem;
+}
+
+.nav-button:hover{
+    border-bottom: solid 1px black;
+}
+
+#content{
+    width: 100%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    object-fit: cover;
+    object-position: 20% 10%;
+}
+
+#left-top{
+    width: 140%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 100%;
+    object-position: 50% 40%;
+}
+
+#left-bottom{
+    width: 100%;
+    height: 100%;
+    grid-row-start: 2;
+    object-fit: cover;
+    max-height: 100%;
+}
+
+
+#right-full{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-row: span 2;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 200%;
+    object-position: 50% 75%;
+    object-fit: cover;
+}
+
+
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    background-color: white;
+    padding: 10px 0 8px 0;
+    text-align: center;
+}

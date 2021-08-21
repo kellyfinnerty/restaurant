@@ -1,0 +1,26 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kellyfinnerty/restaurant.git"
+  },
+  "author": "Kelly Finnerty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kellyfinnerty/restaurant/issues"
+  },
+  "homepage": "https://github.com/kellyfinnerty/restaurant#readme",
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
