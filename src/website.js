@@ -34,6 +34,8 @@ function createNav(){
     homeTab.classList.add("nav-button");
     homeTab.innerHTML = "Home";
     homeTab.addEventListener("click", (e) => {
+        if(checkMainContent("content-home")) return
+
         clearContent();
         createHome();
     });
@@ -42,9 +44,8 @@ function createNav(){
     menuTab.classList.add("nav-button");
     menuTab.innerHTML = "Menu";
     menuTab.addEventListener("click", (e) => {
-        if(checkActive(e.target)) return
+        if(checkMainContent("content-menu")) return
 
-        resetActive(e.target);
         clearContent();
         createMenu();
     });
@@ -53,6 +54,8 @@ function createNav(){
     aboutTab.classList.add("nav-button");
     aboutTab.innerHTML = "About";
     aboutTab.addEventListener("click", (e) => {
+        if(checkMainContent("content-about")) return
+
         clearContent();
         createAbout();
     });
@@ -61,6 +64,8 @@ function createNav(){
     contactTab.classList.add("nav-button");
     contactTab.innerHTML = "Contact";
     contactTab.addEventListener("click", (e) => {
+        if(checkMainContent("content-contact")) return
+
         clearContent();
         createContact();
     });
@@ -73,8 +78,17 @@ function createNav(){
     return nav;
 }
 
+function checkMainContent(matchingID){
+    var main = document.querySelector("main");
+    return main.id === matchingID
+}
+
 function checkActive(tabButton){
     return tabButton.classList.contains('active')
+}
+
+function resetActive(){
+    
 }
 
 function createMain(){
