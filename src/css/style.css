@@ -17,10 +17,6 @@ button{
   font-family: 'Mate SC';  
 }
 
-h1{
-    font-family: 'Mate SC';
-}
-
 #header{
     display: grid;
     grid-template-rows: 75% 30%;
