@@ -28,11 +28,16 @@ module.exports = {
         },
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
-          type: 'asset/resource',
           loader: 'file-loader',
           options: {
-            name: '/public/icons/[name].[ext]'
+            name: '/images/[name].[ext]'
           }
+        },
+        {
+          test: /\.(woff|woff2|eot|ttf|otf)$/i,
+          use: {
+            loader: 'url-loader?limit=100000'
+          },
         }
     ],
   },

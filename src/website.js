@@ -2,18 +2,12 @@ import createHome from "./home.js";
 import createMenu from "./menu.js";
 import createAbout from "./about.js";
 import createContact from "./contact.js";
-import './style.css';
+import './css/style.css';
+
+import Logo from "./images/saras-kitchen-logo.png";
 
 const body = document.querySelector("body");
 
-// if click menu ==> menu function
-
-// contact function
-
-// welcome function
-
-// about function
-console.log("website");
 
 function createHeader(){
     var header = document.createElement("header");
@@ -22,7 +16,7 @@ function createHeader(){
 
     var logo = document.createElement("img");
     logo.id = "header-logo";
-    logo.src = "./public/icons/saras-kitchen-logo.png";
+    logo.src = Logo;
     logo.alt = "Sara's Kitchen Logo with Chef's Hat";
     header.appendChild(logo);
 
@@ -48,6 +42,9 @@ function createNav(){
     menuTab.classList.add("nav-button");
     menuTab.innerHTML = "Menu";
     menuTab.addEventListener("click", (e) => {
+        if(checkActive(e.target)) return
+
+        resetActive(e.target);
         clearContent();
         createMenu();
     });
@@ -76,6 +73,9 @@ function createNav(){
     return nav;
 }
 
+function checkActive(tabButton){
+    return tabButton.classList.contains('active')
+}
 
 function createMain(){
     var main = document.createElement("main");
@@ -101,7 +101,7 @@ function createFooter(){
     body.appendChild(footer);
 
     var developDiv = document.createElement("div");
-    developDiv.innerText = "Developed by Kelly Finnerty in 2021."
+    developDiv.innerText = "developed by kelly finnerty in 2021."
     footer.appendChild(developDiv);
 }
 
