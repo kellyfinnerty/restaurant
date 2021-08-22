@@ -1,6 +1,6 @@
 
-function contactTest(){
+function createContact(){
     console.log("contact working");
 }
 
-export { contactTest }
+export default createContact

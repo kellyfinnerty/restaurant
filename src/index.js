@@ -1,6 +1,6 @@
-import { aboutTest } from "./about.js"
-import { menuTest } from "./menu.js"
-import { contactTest } from "./contact.js"
+import './style.css';
+import createWebsite from "./website.js"
+
 
 const CONTENT = document.querySelector("#content");
 
@@ -11,6 +11,4 @@ restCopy.textContent = `Sara is excited to welcome you to her kitchen.
                         From homemade pasta to dumplings to smoothies, you can really have it all at Sara's Kitchen.`;
 
 
-aboutTest()
-menuTest()
-contactTest()
+createWebsite()

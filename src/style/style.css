@@ -12,7 +12,8 @@ body{
 
 #header{
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: 75% 30%;
+    grid-template-columns: 33%;
     justify-content: center;
     grid-gap: 1em;
     padding-bottom: 0.8em;
@@ -29,7 +30,8 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 8vw);
     grid-template-rows: 1.25rem;
-    justify-content: center;
+    padding-left: 3em;
+    justify-self: center;
 }
 
 .nav-button{

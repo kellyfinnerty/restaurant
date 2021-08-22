@@ -1,5 +1,5 @@
-function menuTest(){
+function createMenu(){
     console.log("menu working");
 }
 
-export { menuTest }
+export default createMenu
