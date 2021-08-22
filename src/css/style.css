@@ -20,7 +20,7 @@ button{
 #header{
     display: grid;
     grid-template-rows: 75% 30%;
-    grid-template-columns: 33%;
+    grid-template-columns: 100%;
     justify-content: center;
     grid-gap: 1em;
     padding-bottom: 0.8em;
@@ -49,6 +49,13 @@ button{
 
 .nav-button:hover{
     border-bottom: solid 1px black;
+}
+
+@media (max-width: 850px){
+    #nav{
+        grid-template-columns: repeat(4, 15vw);
+    }
+    
 }
 
 #footer {

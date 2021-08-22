@@ -1,26 +1,46 @@
+
+
 #content-contact{
     width: 100%;
-    height: 75%;
+    height: 65%;
+
+    text-align: center;
 
     display: grid;
-    grid-template-columns: 25% 25%;
-    grid-template-rows: 50% 23% 20%;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 60% 20% 20%;
     justify-content: center;
     justify-items: center;
 
-    margin-top: 1em;
+    padding-top: 1em;
+}
+
+@media (max-width: 900px) {
+    #content-contact{ 
+        grid-template-columns: 35% 30% 30%;
+    }
+}
+
+@media (max-width: 700px){
+    .map{
+        display:none;
+    }
+
+    #content-contact{
+        grid-template-rows: 25% 20% 20%;
+        grid-template-columns: 100%;
+        grid-gap: 2em;
+    }
 }
 
 .contact-header{
     font-size: 1.5rem;
-    text-align: center;
 }
 
 .map{
-    grid-column: span 2;
-    width: 60%;
+    grid-column: span 3;
+    width: 35vh;
 }
 
 .phone{
-    grid-column: span 2;
 }

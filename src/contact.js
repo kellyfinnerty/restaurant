@@ -1,9 +1,12 @@
 import './css/contact-style.css';
 import mapImg from './images/map.jpg';
+import roses from './images/flowers-background.jpeg';
 
 function createContact(){
     var main = document.querySelector("main");
     main.id = "content-contact";
+
+    //main.style = `background-image: url(${roses})`;
 
     var map = new Image();
     map.src = mapImg;
