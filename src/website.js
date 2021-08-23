@@ -5,8 +5,22 @@ import createContact from "./contact.js";
 import './css/style.css';
 
 import Logo from "./images/saras-kitchen-logo.png";
+import TabLogo from "./images/flower.ico";
 
 const body = document.querySelector("body");
+
+
+function createHead(){
+    var title = document.querySelector("title");
+    title.textContent = "Sara's Kitchen";
+
+    var link = document.createElement("link");
+    link.rel = "shortcut icon";
+    link.type = "image/ico";
+    link.href = TabLogo;
+
+    document.querySelector("head").appendChild(link);
+}
 
 
 function createHeader(){
@@ -121,6 +135,7 @@ function createFooter(){
 
 
 function createWebsite(){
+    createHead();
     createHeader();
     createMain();
     createHome();

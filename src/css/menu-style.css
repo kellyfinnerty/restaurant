@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css2?family=Domine&family=Homemade+Apple&family=Mate+SC&family=Raleway&display=swap);
+
+#content-menu{
+    text-align: center;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 10% 15% 5% 18% 5% 27% 5% 20%;
+    grid-template-columns: 50%;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 0.5em;
+}
+
+#specials{
+    font-family: 'Raleway';
+}
+
+.menu-title{
+    font-family: 'Homemade Apple';
+}
+
+.menu-category{
+    font-family: 'Mate SC';
+    padding: 15px 0px 18px 0px;
+    margin: 0;
+}
+
+.item-title{
+    font-family: 'Domine';
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.menu-item{
+    font-family: 'Raleway';
+    padding-bottom: 18px;
+}
+
+.break{
+    width: 20%;
+    object-fit: cover;
+    max-height: 100%;
+}
