@@ -10,7 +10,7 @@ function createMenu(){
     title.classList.add('menu-title');
     main.appendChild(title);
 
-    //addDivider()
+    addDivider()
 
     var specials = document.createElement("div");
     specials.innerHTML = `<h2 class="menu-category">Specials</h2>
@@ -18,7 +18,7 @@ function createMenu(){
     specials.id = "specials";
     main.appendChild(specials);
 
-    addDivider()
+    //addDivider()
 
     var apps = document.createElement("div");
     apps.innerHTML = `<h2 class="menu-category">Appetizers</h2>
@@ -28,7 +28,7 @@ function createMenu(){
                     </div>`;
     main.appendChild(apps);
 
-    addDivider();
+    //addDivider();
 
     var dinner = document.createElement("div");
     dinner.innerHTML = `<h2 class="menu-category">Dinner</h2>
@@ -42,7 +42,7 @@ function createMenu(){
                         </div>`;
     main.appendChild(dinner);
 
-    addDivider()
+    //addDivider()
 
     var dessert = document.createElement("div");
     dessert.innerHTML = `<h2 class="menu-category">Dessert</h2>

@@ -2,38 +2,50 @@
 
 :root {
     --gold: #A48111;
+    --light-gold: #b38d12;
     --rose-gold: #B76E79;
 }
 
 #content-menu{
     text-align: center;
-    height: 110vw;
+    height: 100vh;
 
     display: grid;
-    grid-template-rows: 10% 15% 2% 16% 2% 23% 2% 20%;
+    grid-template-rows: 10vh 15vh 2vh 16vh 2vh 23vh 2vh 20vh;
+    grid-template-rows: 10vh 2vh 15vh  16vh 23vh 20vh;
     grid-template-columns: 50%;
     justify-content: center;
     justify-items: center;
 }
 
+@media (max-width: 1000px){
+    #content-menu{
+        grid-template-columns: 75%;
+    }
+}
+
 #specials{
     font-family: 'Raleway';
+    margin: 0;
 }
 
 .menu-title{
     font-family: 'Homemade Apple';
-    color: var(--rose-gold);
+    color: var(--gold);
+    margin: 0;
+    padding-top: 30px;
 }
 
 .menu-category{
-    color: var(--rose-gold);
+    color: var(--gold);
     font-family: 'Homemade Apple';
-    padding: 5px 0px 10px 0px;
+
     margin: 0;
+    padding-top: 10px;
 }
 
 .item-title{
-    color: var(--gold);
+    color: var(--light-gold);
     font-family: 'Domine';
     padding-bottom: 5px;
     margin: 0;
@@ -51,8 +63,9 @@
 }
 
 .divider{
-    height: 1%;
-    width: 80%;
+    height: 10%;
+    width: 50%;
     border: none;
     background: var(--gold);
+    border-radius: 100%;
 }
