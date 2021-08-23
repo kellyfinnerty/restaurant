@@ -1,4 +1,7 @@
-
+:root {
+    --gold: #A48111;
+    --rose-gold: #B76E79;
+}
 
 #content-contact{
     width: 100%;
@@ -12,12 +15,12 @@
     justify-content: center;
     justify-items: center;
 
-    padding-top: 1em;
+    padding-top: 4em;
 }
 
 @media (max-width: 900px) {
     #content-contact{ 
-        grid-template-columns: 35% 30% 30%;
+        grid-template-columns: 30% 35% 30%;
     }
 }
 
@@ -27,7 +30,7 @@
     }
 
     #content-contact{
-        grid-template-rows: 25% 20% 20%;
+        grid-template-rows: 20% 25% 20%;
         grid-template-columns: 100%;
         grid-gap: 2em;
     }
@@ -40,8 +43,15 @@
 .map{
     grid-column: span 3;
     width: 35vh;
-    border: solid 1px gray;
+    border-radius: 50%;
 }
 
-.phone{
+.link{
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: var(--rose-gold);
+    text-decoration: none;
 }

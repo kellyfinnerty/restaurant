@@ -1,15 +1,19 @@
 @import url(https://fonts.googleapis.com/css2?family=Domine&family=Homemade+Apple&family=Mate+SC&family=Raleway&display=swap);
 
+:root {
+    --gold: #A48111;
+    --rose-gold: #B76E79;
+}
+
 #content-menu{
     text-align: center;
-    height: 100vh;
+    height: 110vw;
 
     display: grid;
-    grid-template-rows: 10% 15% 5% 18% 5% 27% 5% 20%;
+    grid-template-rows: 10% 15% 2% 16% 2% 23% 2% 20%;
     grid-template-columns: 50%;
     justify-content: center;
     justify-items: center;
-    grid-gap: 0.5em;
 }
 
 #specials{
@@ -18,27 +22,37 @@
 
 .menu-title{
     font-family: 'Homemade Apple';
+    color: var(--rose-gold);
 }
 
 .menu-category{
-    font-family: 'Mate SC';
-    padding: 15px 0px 18px 0px;
+    color: var(--rose-gold);
+    font-family: 'Homemade Apple';
+    padding: 5px 0px 10px 0px;
     margin: 0;
 }
 
 .item-title{
+    color: var(--gold);
     font-family: 'Domine';
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     margin: 0;
 }
 
 .menu-item{
     font-family: 'Raleway';
-    padding-bottom: 18px;
+    padding-bottom: 15px;
 }
 
 .break{
     width: 20%;
     object-fit: cover;
     max-height: 100%;
+}
+
+.divider{
+    height: 1%;
+    width: 80%;
+    border: none;
+    background: var(--gold);
 }

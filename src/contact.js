@@ -14,6 +14,12 @@ function createContact(){
     map.classList.add("map");
     main.appendChild(map);
 
+    var address = document.createElement("div");
+    address.innerHTML = `<h1 class="contact-header">Location</h1>
+                        <a href="https://goo.gl/maps/CEihyx3Xit9RT8Ya8" class="link" target="_blank">55 Walker Road <br>
+                        Manchester-by-the-Sea, MA</a>`;
+    main.appendChild(address);
+
     var hours = document.createElement("div");
     hours.innerHTML = `<h1 class="contact-header">Hours</h1>
                         Monday to Friday | 7pm - 10pm <br>
@@ -22,16 +28,10 @@ function createContact(){
                          `;
     main.appendChild(hours);
 
-    var address = document.createElement("div");
-    address.innerHTML = `<h1 class="contact-header">Location</h1>
-                        55 Walker Road <br>
-                        Manchester-by-the-Sea, MA`;
-    main.appendChild(address);
-
     var phone = document.createElement("div");
     phone.classList.add("phone")
     phone.innerHTML = `<h1 class="contact-header">Phone Number</h1>
-                        978-555-9010`;
+                        <a href="tel:978-555-9010" class="link">978-555-9010</a>`;
     main.appendChild(phone);
 
 }

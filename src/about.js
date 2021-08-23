@@ -4,6 +4,10 @@ function createAbout(){
     var main = document.querySelector("main");
     main.id = "content-about";
 
+    var div = document.createElement("div");
+    div.classList.add("box");
+    main.append(div);
+
     var title = document.createElement("h1");
     title.textContent = "Welcome!";
     title.classList.add("title");
@@ -19,8 +23,8 @@ function createAbout(){
     
 
 
-    main.appendChild(title);
-    main.appendChild(restCopy);
+    div.appendChild(title);
+    div.appendChild(restCopy);
 }
 
 export default createAbout
